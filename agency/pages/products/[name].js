@@ -13,10 +13,8 @@ const Product = ({product}) => {
                         <div key={image.id} className={styles.imgContainer}>
                             <Image src={image.url}
                                 alt=""
-                                width="100%"
-                                height="100%"
                                 objectFit="cover"
-                                layout="responsive"
+                                layout="fill"
                             />
                         </div>
                     )
