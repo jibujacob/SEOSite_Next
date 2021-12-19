@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 import styles from "../styles/Footer.module.css"
 
@@ -10,16 +10,16 @@ const Footer = () => {
             <div className={styles.carL}>
                 <h1 className={styles.title}>AV0CAD0 CREATIVES.</h1>
                 <h1 className={styles.linkTitle}>
-                    <a href="/contact" className={styles.link}>
-                        
-                            <span className={styles.linkText}>WORK WITH US</span>
-                            <Image src="/img/link.png"
-                                alt="link.png"
-                                width="40px"
-                                height="40px"
-                            />
-                        
-                    </a>
+                    <Link passHref href="/contact" className={styles.link}>
+                        <span className={styles.linkText}>WORK WITH US</span>
+                    </Link>
+                    <Link passHref href="/contact" className={styles.link}>
+                        <Image src="/img/link.png"
+                            alt="link.png"
+                            width="40px"
+                            height="40px"
+                        />
+                    </Link>
                 </h1>
             </div>
             <div className={styles.carS}>
